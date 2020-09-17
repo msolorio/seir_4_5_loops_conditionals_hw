@@ -4,20 +4,27 @@ for (let i = 1; i <= 20; i++) {
    console.log(i);
 }
 
+
 // ----- Get Even
 // 1) Write a for loop that will log only the even numbers in 0 through 200.
-for (let i = 0; i <= 200; i = i + 2) {
-   console.log(i);
+for (let i = 0; i <= 200; i++) {
+   if (i % 2 === 0) {
+      console.log(i);
+   }
 }
+
 
 // ----- Excited Kitten
 // 1. Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
 // 2. For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
+const cat = 'Love me, pet me! HSSSSSS!';
+const stringArray = ['...human...why you taking pictures of me?...', '...the catnip made me do it...', '...why does the red dot always get away...'];
 for (let i = 1; i <= 20; i++) {
    console.log(i);
-   console.log('Love me, pet me! HSSSSSS!');
-   if (i % 2 == 0) {
-      console.log('...human...why you taking pictures of me?...');
+   console.log(cat);
+   if (i % 2 === 0) {
+      const randomArray = stringArray[Math.floor(Math.random() * stringArray.length)];
+      console.log(randomArray);
    }
 }
 
