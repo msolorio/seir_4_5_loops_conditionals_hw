@@ -93,8 +93,6 @@ for (let i = 0; i < ninjaTurtles.length; i++) {
 
 
 // ----- Return of the Closets
-// Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript.Use this data to answer the following questions.
-/*
 const kristynsCloset = [
    "left shoe",
    "cowboy boots",
@@ -104,8 +102,6 @@ const kristynsCloset = [
    "yellow knit hat",
    "marshmallow peeps"
 ];
-
-// Thom's closet is more complicated. Check out this nested data structure!!
 const thomsCloset = [
    [
       // These are Thom's shirts
@@ -125,11 +121,20 @@ const thomsCloset = [
       "raybans"
    ]
 ];
-*/
-// --- Alien Attire
 // 1. Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer! Remove Kristyn's shoe from the array and save it to the variable kristynsShoe. Use that variable to add Kristyn's lost shoe to Thom's accessories array.
+const kristynsShoe = kristynsCloset.splice(0, 1);
+thomsCloset[2][3] = kristynsShoe;
+console.log('Return of the Closets (1): ' + thomsCloset);
+
 // --- Dress 'em Up
 // 1. Modify your code to put together 3 separate outfits for Kristyn and Thom.Put the output in a sentence to tell us what we'll be wearing. Mix and match!
+console.log('Return of the Closets (2):')
+console.log(`  Today Kristyn will wear ${kristynsCloset[0]}, a ${kristynsCloset[2]}, and ${kristynsCloset[4]}.`);
+console.log(`  Tomorrow Kristyn will wear ${kristynsCloset[5]}, a ${kristynsCloset[4]}, and a ${kristynsCloset[2]}.`);
+console.log(`  The next day Kristyn will wear a ${kristynsCloset[1]}, ${kristynsCloset[0]}, and ${kristynsCloset[3]}.`);
+console.log(`  Today Thom will wear a ${thomsCloset[0][0]}, ${thomsCloset[1][0]}, and ${thomsCloset[2][0]}.`);
+console.log(`  Tomorrow Thom will wear a ${thomsCloset[0][1]}, ${thomsCloset[1][1]}, and a ${thomsCloset[2][2]}.`);
+console.log(`  The next day Thom will wear a ${thomsCloset[0][2]}, ${thomsCloset[1][1]}, and a ${thomsCloset[2][3]}.`);
 
 // ----- Dirty Laundry
 // Continue looking at the closet arrays:
@@ -137,10 +142,12 @@ const thomsCloset = [
 // ----- Inventory
 // 2. Thom wants to do inventory on his closet.Using bracket notation, log the arrays(not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
 
+
 // ----- Multiples of 3 and 5
 // Yes, you might have tackled this earlier, but try it again(don't look back at your other code 👀)
 // If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 // Find the sum of all the multiples of 3 or 5 below 1000.
+
 
 // ----- Hungry for more ?
 //   Triangles
