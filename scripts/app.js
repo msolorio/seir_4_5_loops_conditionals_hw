@@ -1,4 +1,5 @@
 // -----  Easy Going
+// 1. Write a for loop that will log the numbers 1 through 20.
 for (let i = 1; i <= 20; i++) {
    console.log(i);
 }
@@ -12,6 +13,14 @@ for (let i = 0; i <= 200; i = i + 2) {
 // ----- Excited Kitten
 // 1. Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
 // 2. For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
+for (let i = 1; i <= 20; i++) {
+   console.log(i);
+   console.log('Love me, pet me! HSSSSSS!');
+   if (i % 2 == 0) {
+      console.log('...human...why you taking pictures of me?...');
+   }
+}
+
 
 // ----- Fizz Buzz
 // Write a javascript application that logs all numbers from 1 - 100 AND:
