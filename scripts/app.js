@@ -167,7 +167,7 @@ function mult(n) {
    }
    return (sumOfMult);
 }
-console.log('Multiples of 3 and 5: ' + 'The sum of all of the multiples of 3 and 5 from 0 to 1000 is ' + mult(1000) '.');
+console.log('Multiples of 3 and 5: ' + 'The sum of all of the multiples of 3 and 5 from 0 to 1000 is ' + mult(1000) + '.');
 
 
 // ---------- Hungry for more ? ----------
