@@ -156,9 +156,18 @@ console.log('Dirty Laundry (2): Thom\'s shirts include ' + thom.shirts + '.  Tho
 
 
 // ---------- Multiples of 3 and 5 ----------
-// Yes, you might have tackled this earlier, but try it again(don't look back at your other code 👀)
 // If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 // Find the sum of all the multiples of 3 or 5 below 1000.
+function mult(n) {
+   let sumOfMult = 0;
+   for (let i = 0; i <= n; i++) {
+      if (i % 3 === 0 || i % 5 === 0) {
+         sumOfMult += i;
+      }
+   }
+   return (sumOfMult);
+}
+console.log('Multiples of 3 and 5: ' + 'The sum of all of the multiples of 3 and 5 from 0 to 1000 is ' + mult(1000) '.');
 
 
 // ---------- Hungry for more ? ----------
