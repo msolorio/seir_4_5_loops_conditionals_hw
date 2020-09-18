@@ -141,21 +141,27 @@ console.log(`  The next day Thom will wear a ${thomsCloset[0][2]}, ${thomsCloset
 
 
 // ---------- Dirty Laundry ----------
-// Continue looking at the closet arrays:
 // 1. Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
+for (let i = 0; i <= kristynsCloset.length - 1; i++) {
+   console.log('Dirty Laundry (1): WHIRR!!! Now washing ' + kristynsCloset[i]);
+}
+
+// 2. Inventory - Thom wants to do inventory on his closet. Using bracket notation, log the arrays (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
+const thom = {
+   shirts: thomsCloset[0],
+   pants: thomsCloset[1],
+   accessories: thomsCloset[2]
+};
+console.log('Dirty Laundry (2): Thom\'s shirts include ' + thom.shirts + '.  Thom\'s pants include ' + thom.pants + '.  And Thom\'s accessories include ' + thom.accessories + '.');
 
 
-// ----- Inventory
-// 2. Thom wants to do inventory on his closet.Using bracket notation, log the arrays(not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
-
-
-// ----- Multiples of 3 and 5
+// ---------- Multiples of 3 and 5 ----------
 // Yes, you might have tackled this earlier, but try it again(don't look back at your other code 👀)
 // If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 // Find the sum of all the multiples of 3 or 5 below 1000.
 
 
-// ----- Hungry for more ?
+// ---------- Hungry for more ? ----------
 //   Triangles
 // 0. declare a variable argument and set it equal to 7.
 // 1. Write a loop that console logs a "left isosceles" triangle(SEE BELOW) made of '#' that has the height and length of argument.
