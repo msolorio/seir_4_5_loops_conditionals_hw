@@ -22,7 +22,7 @@ Language: JavaScript <br>
 
 5. After each section (even if you're not fully done with it), *add* and *commit* your work. Use the commit messages that you see at the end of each section. If you go back and fix a section, commit again with an updated message.
 
-6. When you are done with your homework, push up to your forked repo. (git push origin master). Create a pull request from your fork to `la-seir-9-8/HW-Loops-Conditionals`.
+6. When you are done with your homework, push up to your forked repo. (git push origin master). Create a pull request from your fork to `seir-12-07/HW-Loops-Conditionals`.
 
 * Remember: the "Bonus" questions and the "Hungry for More" questions don't count against you, they're just extra questions if you wanna push beyond the baseline.
 
