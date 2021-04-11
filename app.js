@@ -69,3 +69,33 @@ jimHaff.splice(2, 1, 'Santiago', 'San Diego', 'Tokyo');
 // Bonus: Whoops! Jim Haff is actually only allowed to be in one of two cities. Whatever the first of the 3 cities for Jim Haff is now, remove it from the array using .splice()
 jimHaff.splice(2, 1);
 
+// YELL AT THE NINJA TURTLES
+const turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michelangelo'];
+
+// 1. Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
+
+// 2. Use a for loop to call .toUpperCase() on each of them and print out the result.
+// for (let i = 0; i < turtles.length; i++) {
+//   console.log(turtles[i].toUpperCase());
+// }
+
+// Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
+
+// LOOP THROUGH ALL THE TURTLES
+for (let i = 0; i < turtles.length; i++) {
+  let originalTurtle = turtles[i];
+  let updatedTurtle = '';
+
+  // FOR EACH TURTLE LOOP THROUGH EACH LETTER
+  for (let j = 0; j < originalTurtle.length; j++) {
+    // IF LETTER IS EVEN MAKE IT UPPERCASE
+    if (j % 2 === 0) {
+      updatedTurtle += originalTurtle[j].toUpperCase();
+    // IF LETTER IS ODD MAKE IT LOWERCASE
+    } else {
+      updatedTurtle += originalTurtle[j].toLowerCase();
+    }
+  }
+
+  console.log(updatedTurtle);
+}
