@@ -99,3 +99,120 @@ for (let i = 0; i < turtles.length; i++) {
 
   console.log(updatedTurtle);
 }
+
+// RETURN OF THE CLOSETS
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+// 1.
+// const [ kristynsShoe ] = kristynsCloset.splice(0, 1);
+const kristynsShoe = kristynsCloset.shift();
+thomsCloset[2].push(kristynsShoe);
+
+// 1. Dress em up
+kristynsOutfits = [
+  [kristynsCloset[0], kristynsCloset[2], kristynsCloset[4]],
+  [kristynsCloset[0], kristynsCloset[3], kristynsCloset[5]],
+  [kristynsCloset[1], kristynsCloset[2], kristynsCloset[6]],
+];
+
+thomsOutfits = [
+  [thomsCloset[0][1], thomsCloset[1][1], thomsCloset[2][1]],
+  [thomsCloset[0][2], thomsCloset[1][2], thomsCloset[2][3]],
+  [thomsCloset[0][3], thomsCloset[1][2], thomsCloset[2][2]],
+];
+
+// Dirty Laundry
+// 1. Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
+// for (let i = 0; i < kristynsCloset.length; i++) {
+//   console.log(`WHRR: Now washing ${kristynsCloset[i]}`);
+// }
+
+// Inventory
+// 1. Thom wants to do inventory on his closet. Using bracket notation, log the arrays (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
+// for (let i = 0; i < thomsCloset.length; i++) {
+//   console.log(thomsCloset[i]);
+// }
+
+// MULTIPLES OF 3 and 5
+// let sum = 0;
+
+// for (let i = 0; i < 1000; i++) {
+//   if (i % 3 === 0 || i % 5 === 0) {
+//     sum += i;
+//   }
+// }
+
+// console.log(sum);
+
+// HUNGRY FOR MORE
+// 1. Write a loop that console logs a "left isosceles" triangle (SEE BELOW) made of '#' that has the height and length of argument.
+// let argument = 7;
+
+// for (let i = 1; i < argument + 1; i++) {
+//   console.log('#'.repeat(i));
+// }
+
+// 2. Write a loop that console logs a "right isosceles" triangle (SEE BELOW) made of '#' that has the height and length of argument. This is deceptively tricky.
+// let argument = 7;
+
+// for (let i = 1; i < argument + 1; i++) {
+//   console.log(' '.repeat(argument - i) + '#'.repeat(i));
+// }
+
+// 3. Write a loop that console logs an "upside down left" isosceles triangle made of '#' that has the height and length of the argument.
+// let argument = 7;
+
+// for (let i = argument; i > 0; i--) {
+//   console.log('#'.repeat(i));
+// }
+
+// 4. Write a loop that console logs an "upside down right" isosceles triangle made of '#' that has the height and length of the argument. This is also tricky.
+// let argument = 7;
+
+// for (let i = argument; i > 0; i--) {
+//   console.log(' '.repeat(argument - i) + '#'.repeat(i));
+// }
+
+// 5. 
+
+// FIND THE MEDIAN
+// const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18,12, 17, 12, 71, 18, 15, 12];
+
+// // PSEUDOCODE
+// // - SORT THE ARRAY OF NUMBERS FROM SMALLEST TO LARGEST
+// // - GET THE LENGTH OF THE ARRAY AND DIVIDE BY 2
+
+// const sortedNums = nums.sort((a, b) => a - b);
+
+// const middleIndex = Math.floor(sortedNums.length / 2);
+
+// console.log(sortedNums[middleIndex]);
